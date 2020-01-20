@@ -1,0 +1,216 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+}
+
+[data-ui-mode=dark] .daily-email {
+    color: #fff;
+    border-bottom: 1px solid #333;
+    background-color:transparent
+}
+
+[data-ui-mode=dark] .daily-email .daily-email__field {
+    background-color: #000;
+    color:#fff
+}
+
+.daily-email {
+    background-color: #f5f5f5;
+    padding-top: 60px;
+    overflow: hidden;
+    color:#333
+}
+
+.daily-email__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center
+}
+
+.daily-email__device-holder, .daily-email__proposition {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width:50%
+}
+
+.daily-email__proposition {
+    text-align: right;
+    padding-right: 50px;
+    padding-left:calc(50% - 450px)
+}
+
+.daily-email__proposition .error-message {
+    margin-top: 12px;
+    margin-bottom:-12px
+}
+
+.daily-email__proposition .error-message > em {
+    background-color: #ff6;
+    font-size:13px
+}
+
+.daily-email h1 {
+    font-size: 35px;
+    line-height: 100%;
+    font-weight: 700;
+    margin-bottom:12px
+}
+
+.daily-email p {
+    font-size: 18px;
+    line-height: 141.3793103448%;
+    margin-bottom:.2em
+}
+
+.daily-email__inputs {
+    display: flex;
+    flex-direction: row;
+    padding: 24px 0;
+    justify-content:flex-end
+}
+
+.daily-email__field {
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-right:0
+}
+
+.daily-email__button, .daily-email__field {
+    -webkit-appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 13px;
+    margin: 0;
+    padding: 0 12px;
+    line-height:40px
+}
+
+.daily-email__button {
+    width: 30%;
+    background: #c6000e;
+    border: 1px solid #c6000e;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    -webkit-border-radius:0
+}
+
+.daily-email__device-holder {
+    padding-left: 50px;
+    padding-right:50px
+}
+
+.daily-email__device {
+    background-image: url(/img/iphoneX.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    box-sizing: border-box;
+    display: block;
+    height: 450px;
+    width: 360px;
+    border-radius: 55px 55px 0 0;
+    box-shadow: 30px 20px 6px rgba(0, 0, 0, .2);
+    padding:90px 23px 0
+}
+
+.daily-email__device .daily-email__example {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    -ms-overflow-style:none
+}
+
+.daily-email__device .daily-email__example > img {
+    width: 100%;
+    margin: 0;
+    padding:0
+}
+
+@media screen and (max-width: 1024px) {
+    .daily-email__proposition {
+        padding-right:0
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .daily-email {
+        padding-top:30px
+    }
+
+    .daily-email h1 {
+        font-size: 34px;
+        line-height: 110.3448275862%;
+        margin-bottom:.2em
+    }
+
+    .daily-email p {
+        font-size: 18px;
+        line-height: 141.3793103448%;
+        margin-bottom:.2em
+    }
+
+    .daily-email__inner {
+        flex-direction:column
+    }
+
+    .daily-email__inputs {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width:70%
+    }
+
+    .daily-email__device {
+        height: 300px;
+        width: 260px;
+        border-radius: 40px 40px 0 0;
+        box-shadow: 18px 10px 6px rgba(0, 0, 0, .2);
+        padding-top: 65px;
+        padding-left: 17px;
+        padding-right:17px
+    }
+
+    .daily-email__proposition {
+        width: auto;
+        text-align: center;
+        padding:30px 0
+    }
+
+    .daily-email__device-holder {
+        padding-left: 0;
+        padding-right: 0;
+        width:auto
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .home .daily-email {
+        padding-top: 0;
+        border-bottom: 1px solid #dcdcdc;
+        background-color: #fff;
+        margin-bottom:30px
+    }
+
+    .daily-email__inputs {
+        width:auto
+    }
+    
+    .daily-email p {
+        font-size: 16px;
+        line-height: 144.8275862069%;
+        margin-bottom:.2em
+    }
+
+    .daily-email__inputs {
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom:0
+    }
+}
